@@ -13,11 +13,12 @@ function generateWorkout() {
 
         const workoutHtml = exercises.map((item, index) => {
             const checked = localStorage.getItem(`workout_${index}`) === "true" ? "checked" : "";
-            return \`
-                <label>
-                    <input type="checkbox" data-index="\${index}" \${checked}> \${item}
-                </label>
-            \`;
+            return `
+    <label>
+        <input type="checkbox" data-index="${index}" ${checked}> ${item}
+    </label>
+`;
+
         }).join("");
 
         output.innerHTML = workoutHtml;
