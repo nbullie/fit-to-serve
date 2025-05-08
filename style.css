@@ -63,7 +63,19 @@ button:hover {
 }
 
 .hidden {
-    display: none;
+    visibility: hidden;
+    opacity: 0;
+    height: 0;
+    overflow: hidden;
+    pointer-events: none;
+    transition: opacity 0.3s ease;
+}
+
+.show {
+    visibility: visible;
+    opacity: 1;
+    height: auto;
+    pointer-events: auto;
 }
 
 #workout-plan p, #daily-tip {

@@ -9,7 +9,7 @@ function generateWorkout() {
     if (test && workoutPool[test]) {
         const exercises = getRandomExercises([...workoutPool[test]]);
         section.classList.remove("hidden");
-    section.classList.add("fade-in");
+    section.classList.add("fade-in", "show");
 
         const workoutHtml = exercises.map((item, index) => {
             const checked = localStorage.getItem(`workout_${index}`) === "true" ? "checked" : "";
