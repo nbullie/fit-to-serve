@@ -1,26 +1,82 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap');
+
 body {
-    font-family: Arial, sans-serif;
+    font-family: 'Poppins', sans-serif;
     margin: 0;
     padding: 0;
-    background: #f4f4f4;
+    background: #f2f4f8;
     color: #333;
 }
+
 header, footer {
-    background: #333;
-    color: white;
+    background: #1c1f26;
+    color: #fff;
     text-align: center;
-    padding: 1em;
+    padding: 1.5em 1em;
 }
+
+header h1 {
+    margin: 0;
+    font-size: 2em;
+    font-weight: 600;
+}
+
 main {
-    padding: 20px;
+    max-width: 700px;
+    margin: 2em auto;
+    padding: 0 1em;
 }
+
 section {
-    margin-bottom: 20px;
+    margin-bottom: 2em;
+    background: #fff;
+    padding: 1.5em;
+    border-radius: 12px;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.05);
 }
+
+label, select, button {
+    display: block;
+    width: 100%;
+    margin-top: 0.5em;
+    font-size: 1em;
+}
+
+select, button {
+    padding: 0.75em;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    margin-top: 1em;
+}
+
 button {
-    padding: 10px 20px;
-    margin-top: 10px;
+    background-color: #0077ff;
+    color: white;
+    font-weight: bold;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
 }
+
+button:hover {
+    background-color: #005fcc;
+}
+
 .hidden {
     display: none;
+}
+
+#workout-plan p, #daily-tip {
+    margin: 0.75em 0;
+}
+
+h2 {
+    color: #0077ff;
+    font-weight: 600;
+    margin-bottom: 0.5em;
+}
+
+footer {
+    font-size: 0.9em;
+    margin-top: 3em;
 }
