@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Fit to Serve</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <h1>Fit to Serve</h1>
+        <p>Prepare for your police fitness test with customized daily workouts.</p>
+    </header>
+
+    <main>
+        <section>
+            <label for="test-select">Choose Your Department:</label>
+            <select id="test-select">
+                <option value="">-- Select --</option>
+                <option value="illinois">Illinois State Police</option>
+                <option value="lapd">LAPD</option>
+                <option value="nypd">NYPD</option>
+            </select>
+            <button onclick="generateWorkout()">Get Workout</button>
+        </section>
+
+        <section id="workout-output" class="hidden">
+            <h2>Today's Workout</h2>
+            <div id="workout-plan"></div>
+        </section>
+    
+    <section id="tip-of-the-day">
+        <h2>Tip of the Day 💡</h2>
+        <p id="daily-tip"></p>
+    </section>
+</main>
+
+
+    <footer>
+        <p>&copy; 2025 Fit to Serve</p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
