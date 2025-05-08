@@ -1,0 +1,135 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap');
+
+body {
+    font-family: 'Poppins', sans-serif;
+    margin: 0;
+    padding: 0;
+    background: #f2f4f8;
+    color: #333;
+}
+
+header, footer {
+    background: #1c1f26;
+    color: #fff;
+    text-align: center;
+    padding: 1.5em 1em;
+}
+
+header h1 {
+    margin: 0;
+    font-size: 2em;
+    font-weight: 600;
+}
+
+main {
+    max-width: 700px;
+    margin: 2em auto;
+    padding: 0 1em;
+}
+
+section {
+    margin-bottom: 2em;
+    background: #fff;
+    padding: 1.5em;
+    border-radius: 12px;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.05);
+}
+
+label, select, button {
+    display: block;
+    width: 100%;
+    margin-top: 0.5em;
+    font-size: 1em;
+}
+
+select, button {
+    padding: 0.75em;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    margin-top: 1em;
+}
+
+button {
+    background-color: #0077ff;
+    color: white;
+    font-weight: bold;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+button:hover {
+    background-color: #005fcc;
+}
+
+.hidden {
+    visibility: hidden;
+    opacity: 0;
+    height: 0;
+    overflow: hidden;
+    pointer-events: none;
+    transition: opacity 0.3s ease;
+}
+
+.show {
+    visibility: visible;
+    opacity: 1;
+    height: auto;
+    pointer-events: auto;
+}
+
+#workout-plan p, #daily-tip {
+    margin: 0.75em 0;
+}
+
+h2 {
+    color: #0077ff;
+    font-weight: 600;
+    margin-bottom: 0.5em;
+}
+
+footer {
+    font-size: 0.9em;
+    margin-top: 3em;
+}
+
+
+/* Animations */
+.fade-in {
+    animation: fadeIn 0.6s ease-out forwards;
+    opacity: 0;
+}
+
+.slide-in {
+    animation: slideIn 0.6s ease-out forwards;
+    transform: translateY(10px);
+    opacity: 0;
+}
+
+@keyframes fadeIn {
+    to {
+        opacity: 1;
+    }
+}
+
+@keyframes slideIn {
+    to {
+        transform: translateY(0);
+        opacity: 1;
+    }
+}
+
+/* Button hover */
+button:hover {
+    background-color: #005fcc;
+    transform: scale(1.03);
+}
+
+button:active {
+    transform: scale(0.97);
+    background-color: #004fa3;
+}
+
+button {
+    transition: all 0.2s ease-in-out;
+}
