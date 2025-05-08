@@ -64,3 +64,32 @@ function resetProgress() {
   }
   location.reload();
 }
+
+
+function updateStreak() {
+  const today = new Date().toLocaleDateString();
+  const lastDate = localStorage.getItem("lastWorkoutDate");
+  let streak = parseInt(localStorage.getItem("streak") || "0");
+
+  if (lastDate !== today) {
+    const yesterday = new Date();
+    yesterday.setDate(yesterday.getDate() - 1);
+    const formattedYest = yesterday.toLocaleDateString();
+
+    if (lastDate === formattedYest) {
+      streak += 1;
+    } else {
+      streak = 1;
+    }
+
+    localStorage.setItem("lastWorkoutDate", today);
+    localStorage.setItem("streak", streak.toString());
+  }
+
+  document.getElementById("streak-count").innerText = streak;
+}
+
+window.onload = function () {
+  showTipOfTheDay();
+  updateStreak();
+};
