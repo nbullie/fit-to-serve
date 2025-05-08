@@ -2,26 +2,27 @@ body {
   font-family: 'Poppins', sans-serif;
   margin: 0;
   padding: 0;
-  background: #f2f4f8;
-  color: #333;
+  background: #0e0e0e;
+  color: #f0f0f0;
 }
 header, footer {
-  background: #1c1f26;
-  color: #fff;
+  background: #1a1a1a;
+  color: #00aaff;
   text-align: center;
   padding: 1.5em 1em;
+  border-bottom: 2px solid #00aaff;
 }
 main {
-  max-width: 700px;
+  max-width: 800px;
   margin: 2em auto;
   padding: 0 1em;
 }
 section {
   margin-bottom: 2em;
-  background: #fff;
+  background: #1b1c1f;
   padding: 1.5em;
   border-radius: 12px;
-  box-shadow: 0 2px 8px rgba(0,0,0,0.05);
+  box-shadow: 0 0 10px rgba(0,170,255,0.1);
 }
 label, select, button, input, textarea {
   display: block;
@@ -31,19 +32,21 @@ label, select, button, input, textarea {
 }
 select, button, input, textarea {
   padding: 0.75em;
-  border: 1px solid #ccc;
+  border: 1px solid #333;
   border-radius: 8px;
-  margin-top: 1em;
+  background: #141414;
+  color: #f0f0f0;
 }
 button {
-  background-color: #0077ff;
-  color: white;
+  background-color: #00aaff;
+  color: black;
   font-weight: bold;
   cursor: pointer;
-  transition: background-color 0.3s ease;
+  transition: background-color 0.3s ease, transform 0.2s ease;
 }
 button:hover {
-  background-color: #005fcc;
+  background-color: #008ecc;
+  transform: scale(1.03);
 }
 .hidden {
   display: none;
@@ -51,15 +54,17 @@ button:hover {
 #workout-plan p, #daily-tip {
   margin: 0.75em 0;
 }
-h2 {
-  color: #0077ff;
+h2, h3 {
+  color: #00aaff;
   font-weight: 600;
   margin-bottom: 0.5em;
 }
 footer {
   font-size: 0.9em;
   margin-top: 3em;
+  border-top: 1px solid #333;
 }
+
 /* Mobile responsiveness */
 @media (max-width: 600px) {
   body {
