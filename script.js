@@ -9,6 +9,7 @@ function generateWorkout() {
     if (test && workoutPool[test]) {
         const exercises = getRandomExercises([...workoutPool[test]]);
         section.classList.remove("hidden");
+    section.classList.add("fade-in");
 
         const workoutHtml = exercises.map((item, index) => {
             const checked = localStorage.getItem(`workout_${index}`) === "true" ? "checked" : "";
@@ -20,6 +21,7 @@ function generateWorkout() {
         }).join("");
 
         output.innerHTML = workoutHtml;
+    output.classList.add("slide-in");
     document.getElementById("reset-button").classList.remove("hidden");
 
         // Add event listeners to checkboxes
